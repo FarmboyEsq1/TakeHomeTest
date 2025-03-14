@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."wallet_organizations" ("wallet id" text,"organization_id" integer,"org name" text,"organization_type" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."wallet_organizations" FROM 'C:\sgrimes\code\takehometest\seeds\wallet_organizations.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

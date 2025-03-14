@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."transactions" ("transaction_id" text,"wallet_id" text,"amount_usd" float8,"type" text,"transaction_timestamp" timestamp without time zone)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."transactions" FROM 'C:\sgrimes\code\takehometest\seeds\transactions.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

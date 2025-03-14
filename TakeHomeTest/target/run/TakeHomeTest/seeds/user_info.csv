@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."user_info" ("user_id" text,"wallet_id" text,"first_name" text,"last_name" text,"email" text,"onboarded_date" timestamp without time zone)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."user_info" FROM 'C:\sgrimes\code\takehometest\seeds\user_info.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
